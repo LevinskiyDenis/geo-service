@@ -48,28 +48,4 @@ public class MessageSenderImplTest {
         Assertions.assertEquals(expected, result);
     }
 
-//    @Test
-//    public void sendRussian() {
-//        GeoServiceImpl geoService = Mockito.mock(GeoServiceImpl.class);
-//        Mockito.when(geoService.byIp(Mockito.anyString())).thenReturn(new Location("Moscow", Country.RUSSIA, null, 0));
-//        Location location = geoService.byIp(Mockito.anyString());
-//        LocalizationServiceImpl localizationService = new LocalizationServiceImpl();
-//        String expected = "Добро пожаловать";
-//
-//        String result = localizationService.locale(location.getCountry());
-//        Assertions.assertEquals(expected, result);
-//    }
-//
-//    @Test
-//    public void sendEnglish() {
-//        GeoServiceImpl geoService = Mockito.mock(GeoServiceImpl.class);
-//        Mockito.when(geoService.byIp(Mockito.anyString())).thenReturn(new Location("New York", Country.USA, null,  0));
-//        Location location = geoService.byIp(Mockito.anyString());
-//        LocalizationServiceImpl localizationService = new LocalizationServiceImpl();
-//        String expected = "Welcome";
-//
-//        String result = localizationService.locale(location.getCountry());
-//        Assertions.assertEquals(expected, result);
-//    }
-
 }

@@ -19,10 +19,6 @@ public class MessageSenderImpl implements MessageSender {
         this.localizationService = localizationService;
     }
 
-    // Написать тесты для проверки языка отправляемого сообщения (класс MessageSender) с использованием Mockito
-    //Поверить, что MessageSenderImpl всегда отправляет только русский текст, если ip относится к российскому сегменту адресов.
-    //Поверить, что MessageSenderImpl всегда отправляет только английский текст, если ip относится к американскому сегменту адресов.
-
     public String send(Map<String, String> headers) {
         String ipAddress = String.valueOf(headers.get(IP_ADDRESS_HEADER));
         if (ipAddress != null && !ipAddress.isEmpty()) {
